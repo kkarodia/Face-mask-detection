@@ -13,16 +13,16 @@ This project implements a face mask detection system designed to classify images
 - **Image Processing**: PIL, NumPy
 - **Deployment**: Docker, Uvicorn
 
-## ✨ Features
+##  Features
 
 ### Core Features
 
-- ✅ **Binary Classification**: Detects mask presence with >90% accuracy
-- ✅ **REST API**: FastAPI-based endpoints for easy integration
-- ✅ **Batch Processing**: Process multiple images in a single request
-- ✅ **Fast Inference**: ~30-50ms per image on CPU
-- ✅ **Interactive Documentation**: Auto-generated Swagger UI
-- ✅ **Production Ready**: Docker containerization included
+-  **Binary Classification**: Detects mask presence with >90% accuracy
+-  **REST API**: FastAPI-based endpoints for easy integration
+-  **Batch Processing**: Process multiple images in a single request
+-  **Fast Inference**: ~30-50ms per image on CPU
+-  **Interactive Documentation**: Auto-generated Swagger UI
+-  **Production Ready**: Docker containerization included
 
 ### Additional Features
 
