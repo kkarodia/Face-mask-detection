@@ -1,0 +1,19 @@
+{
+  "test_metrics": {
+    "loss": 0.42516589164733887,
+    "accuracy": 0.9417989253997803
+  },
+  "confusion_matrix": [
+    [
+      354,
+      19
+    ],
+    [
+      25,
+      358
+    ]
+  ],
+  "roc_auc": 0.9827312244940816,
+  "average_precision": 0.9834204946883133,
+  "classification_report": "              precision    recall  f1-score   support\n\n   with_mask     0.9340    0.9491    0.9415       373\nwithout_mask     0.9496    0.9347    0.9421       383\n\n    accuracy                         0.9418       756\n   macro avg     0.9418    0.9419    0.9418       756\nweighted avg     0.9419    0.9418    0.9418       756\n"
+}

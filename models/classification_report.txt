@@ -1,0 +1,11 @@
+Classification Report
+==================================================
+
+              precision    recall  f1-score   support
+
+   with_mask     0.9340    0.9491    0.9415       373
+without_mask     0.9496    0.9347    0.9421       383
+
+    accuracy                         0.9418       756
+   macro avg     0.9418    0.9419    0.9418       756
+weighted avg     0.9419    0.9418    0.9418       756

@@ -1,0 +1,36 @@
+# Core Dependencies
+python==3.11.0
+tensorflow==2.15.0
+numpy==1.24.3
+pillow==10.2.0
+
+# API Dependencies
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Data Processing
+scikit-learn==1.4.0
+pandas==2.1.4
+
+# Visualization
+matplotlib==3.8.2
+seaborn==0.13.1
+
+# MLflow (optional - for experiment tracking)
+mlflow==2.10.0
+
+# ONNX (optional - for model optimization)
+onnx==1.15.0
+onnxruntime==1.16.3
+tf2onnx==1.16.1
+
+# Development and Testing
+pytest==7.4.4
+pytest-cov==4.1.0
+black==24.1.1
+flake8==7.0.0
+mypy==1.8.0
+
+# Utilities
+tqdm==4.66.1
