@@ -128,15 +128,39 @@ docker run -p 8000:8000 face-mask-detection
 
 ```
 face-mask-detection/
-├── api.py                 # FastAPI application
-├── train.py              # Model training script
-├── model/                # Saved models
-├── data/                 # Dataset
-│   ├── with_mask/
-│   └── without_mask/
-├── requirements.txt      # Python dependencies
-├── Dockerfile           # Docker configuration
-└── README.md            # This file
+│
+├── README.md                          # This file
+├── requirements.txt                   # Python dependencies
+├── Dockerfile                         # Docker configuration
+├── docker-compose.yml                 # Docker Compose configuration
+├── setup.sh                           # Setup automation script (Linux/Mac)
+│
+├── src/                               # Source code
+│   ├── data_preprocessing.py          # Data loading and preprocessing
+│   ├── train.py                       # Model training script
+│   ├── evaluate.py                    # Model evaluation
+│   ├── inference.py                   # Inference on new images
+│   └── convert_to_onnx.py             # ONNX conversion (optional)
+│
+├── api/                               # FastAPI application
+│   ├── main.py                        # API endpoints
+│   └── requirements.txt               # API-specific dependencies
+│
+├── data/                              # Data directory
+│   ├── raw/                           # Original dataset (user downloads)
+│   │   ├── with_mask/                 # Images with masks
+│   │   └── without_mask/              # Images without masks
+│   └── processed/                     # Preprocessed data (generated)
+│
+├── models/                            # Model artifacts (generated)
+│   ├── mask_detection_model.keras     # Trained model
+│   ├── confusion_matrix.png           # Evaluation visualizations
+│   ├── roc_curve.png
+│   └── classification_report.txt
+│
+├── logs/                              # Training logs
+├── test_api.py                        # API testing script
+└── .gitignore                         # Git ignore file
 ```
 
 ## License
