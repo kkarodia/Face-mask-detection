@@ -445,6 +445,8 @@ docker rm mask-api
 
 # Remove image
 docker rmi face-mask-detection
+
+
 📁 Project Structure
 
 face-mask-detection/
